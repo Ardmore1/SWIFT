@@ -16,8 +16,8 @@ Screen Shots:
 -After selecting a user, the tech can click last logged in PC and receives this window in which the form is filled in with a lot of very useful information about the PC the remote person is using.
 It also provides many useful tools such remote control the PC, jump to their C drive, manage their computer.
 Example Usage: The level-1 tech can type in the users name, click last logged on PC, and then click remote control. -> in less than 3 seconds this tech is now on the screen with the employee helping them. This is compared to the traditional way in which the tech would have to spend 30 minutes walking the employee though figuring out their IP address, or opening some program to grant remote control to their PC.
-![Alt text](/LastLoggedInPC.png?raw=true "This is the main window when you open the program")
+![Alt text](/LastLoggedInPC.png?raw=true "Last logged in PC window")
 
 This form creates a complete list of all logged in employees. You can select an employee to see their complete login history, and then click the buttons to initiate tools to help the employee.
-![Alt text](/UserLoginHistory?raw=true "This is the main window when you open the program")
+![Alt text](/UserLoginHistory.png?raw=true "User history window")
 
