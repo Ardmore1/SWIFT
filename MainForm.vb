@@ -5,7 +5,7 @@
 'reset Ad passwords, connect to PC functions such as manage this PC,
 'Get logon history, unlock accounts and much much more
 'This tool set allows level1 techs to make use of the common features in
-'ConfigMGR and Active directory without having to know how to use either.
+'ConfigMGR and Active directory without having to know how to use either..
 Imports System.Text
 Imports System.Security.Cryptography
 Imports System.Security.AccessControl
