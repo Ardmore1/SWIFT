@@ -7,4 +7,9 @@ This is a tool I created that brings together information from Active directory 
 'reset Ad passwords, connect to PC functions such as manage this PC,
 'Get logon history, unlock accounts and much much more
 'This tool set allows level1 techs to make use of the advanced features in
-'MS ConfigMGR and Active directory without having to know how to use either..
+'MS ConfigMGR and Active directory without having to know how to use either.
+
+Screen Shots:
+-This is the main window when you open the program
+![Alt text](/MainForm.png?raw=true "This is the main window when you open the program")
+
