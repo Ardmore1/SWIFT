@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BF31E9CF-9550-4612-8EC8-9A3428BE3F19}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SyntecADUserEditor.My.MyApplication</StartupObject>
+    <RootNamespace>SyntecADUserEditor</RootNamespace>
+    <AssemblyName>SyntecADUserEditor</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>userupdating.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>16</ApplicationRevision>
+    <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SyntecADUserEditor.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SyntecADUserEditor.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>54499C4207D839988FDFD49B9D920642AFAFACC8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SyntecADUserEditor_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.DirectoryServices" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddRemoveP.Designer.vb">
+      <DependentUpon>AddRemoveP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddRemoveP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllUrl.Designer.vb">
+      <DependentUpon>AllUrl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllUrl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMPopUp.designer.vb">
+      <DependentUpon>CCMPopUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CCMPopUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewVersionInfo.Designer.vb">
+      <DependentUpon>NewVersionInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewVersionInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindSoftware.Designer.vb">
+      <DependentUpon>FindSoftware.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FindSoftware.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoundUsers.Designer.vb">
+      <DependentUpon>FoundUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FoundUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryFilter.Designer.vb">
+      <DependentUpon>HistoryFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryFilter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeFolders.Designer.vb">
+      <DependentUpon>MakeFolders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MakeFolders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassGen.Designer.vb">
+      <DependentUpon>PassGen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PassGen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassReset.Designer.vb">
+      <DependentUpon>PassReset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PassReset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogonHistory.Designer.vb">
+      <DependentUpon>LogonHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogonHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LastLoggedOnCoputer.Designer.vb">
+      <DependentUpon>LastLoggedOnCoputer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LastLoggedOnCoputer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="popup.Designer.vb">
+      <DependentUpon>popup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="popup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcList.Designer.vb">
+      <DependentUpon>ProcList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProcList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RControl.Designer.vb">
+      <DependentUpon>RControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shadow.Designer.vb">
+      <DependentUpon>Shadow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Shadow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uinfo.Designer.vb">
+      <DependentUpon>Uinfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Uinfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WhichDrive.Designer.vb">
+      <DependentUpon>WhichDrive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WhichDrive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddRemoveP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddRemoveP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUrl.resx">
+      <DependentUpon>AllUrl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMPopUp.resx">
+      <DependentUpon>CCMPopUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewVersionInfo.resx">
+      <DependentUpon>NewVersionInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindSoftware.resx">
+      <DependentUpon>FindSoftware.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoundUsers.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FoundUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryFilter.resx">
+      <DependentUpon>HistoryFilter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeFolders.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MakeFolders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassGen.resx">
+      <DependentUpon>PassGen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassReset.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PassReset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogonHistory.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LogonHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LastLoggedOnCoputer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LastLoggedOnCoputer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="popup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>popup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProcList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shadow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Shadow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uinfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Uinfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WhichDrive.resx">
+      <DependentUpon>WhichDrive.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SyntecADUserEditor_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="userupdating.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ActiveDs">
+      <Guid>{97D25DB0-0363-11CF-ABC4-02608C9E7553}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
