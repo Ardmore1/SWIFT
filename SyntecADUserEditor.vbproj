@@ -328,6 +328,10 @@
     <None Include="SyntecADUserEditor_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FindSoftware.png" />
+    <Content Include="LastLoggedInPC.png" />
+    <Content Include="MainForm.png" />
+    <Content Include="RemoteControl.png" />
     <Content Include="userupdating.ico" />
   </ItemGroup>
   <ItemGroup>

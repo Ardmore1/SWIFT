@@ -5,7 +5,7 @@
 'reset Ad passwords, connect to PC functions such as manage this PC,
 'Get logon history, unlock accounts and much much more
 'This tool set allows level1 techs to make use of the common features in
-'ConfigMGR and Active directory without having to know how to use either..
+'ConfigMGR and Active directory without having to know how to use either...
 Imports System.Text
 Imports System.Security.Cryptography
 Imports System.Security.AccessControl
@@ -721,15 +721,17 @@ Public Class frmMainForm
     End Sub
     Function MegroupsCheck(ByVal TheGroupToCheck As String)
         'Check what groups the user of this program belongs to
-        For Each groupIgot As String In MeGroups
-            Try
+
+        Try
+            For Each groupIgot As String In MeGroups
                 If groupIgot.IndexOf(TheGroupToCheck) <> -1 Then
                     Return True
                     Exit Function
                 End If
+            Next
             Catch ex As Exception
-            End Try
-        Next
+        End Try
+
         Return False
     End Function
     Public Sub ClearExtraAccountInfo()
